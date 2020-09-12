@@ -7,7 +7,7 @@ const error = document.querySelector('#error')
 
 
 fetchWeather = ((address) => {
-fetch('http://localhost:3000/weather?address='+address).then((res) => {
+fetch('/weather?address='+address).then((res) => {
   res.json().then((data)=> {
     error.textContent = ''
     if(data.error) {
