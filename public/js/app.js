@@ -17,6 +17,7 @@ fetch('/weather?address='+address).then((res) => {
      
     console.log(data)
     weatherMessage.textContent = data.weatherinfo
+    error.textContent = data.location
   })
 })
 })
