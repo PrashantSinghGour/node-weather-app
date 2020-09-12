@@ -22,10 +22,6 @@ fetch('/weather?address='+address).then((res) => {
 })
 })
 
-
-
-weatherMessage.textContent = 'hello'
-
 form.addEventListener('submit', (e)=> {
   e.preventDefault();
   const location = search.value
